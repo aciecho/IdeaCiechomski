@@ -13,6 +13,7 @@
     height: 90px;
     width: 100%;
     display: inline-block;
+    z-index: 1000;
 }
 .encabezado .barra{
     width: 100%;
@@ -196,6 +197,7 @@ footer .copy{
 .servs h3{
     text-decoration: underline;
     font-family: 'Playfair Display', serif;
+    z-index: 1;
 }
 
 .servs ul{
