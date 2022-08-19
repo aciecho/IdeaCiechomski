@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.logobar{
+    height: 50px;
+    width: auto;
+}
+.navbar{
+    background-color: #a6d8be !important;
+}
+.navbar-brand{
+    display:flex;
+    justify-content: left;
+}
+.logo{
+    display: flex;
+    justify-items: start;
+}
+.collapse ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
