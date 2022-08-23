@@ -6,75 +6,35 @@
 } 
 
 /* arranca header */
-.encabezado{
-    background-color: #a6d8be;
-    position: sticky;
-    top: 0;
-    height: 90px;
-    width: 100%;
-    display: inline-block;
-    z-index: 1000;
-}
-.encabezado .barra{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-.encabezado .barra .log{
-    display: flex;
-    justify-content: space-between;
-}
-.encabezado .barra .log span{
-    display: flex;
-    align-items: center;
-    font-family: 'Dancing Script', cursive;
-    font-size: 70px;
-}
 
-header div img{
-    height: 80px;
+.encabezado .navbar{
+    background-color: #a6d8be !important;
+}
+.logobar{
+    height: 70px !important;
     width: auto;
 }
-.encabezado .barra .menu{
+
+.navbar-brand{
+    display:flex;
+    justify-content: left;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px !important;
+    color: #346B55 !important;
+}
+.logo{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-decoration: none;
+    justify-items: start;
 }
-.encabezado .barra .menuResponsive{
-    display:none;
+.navbar-nav{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-evenly;
 }
-
-.encabezado .barra .menu ul li{
-    display: inline;
-    padding-right: 10px;
+.nav-link{
+    color: #346B55 !important;
 }
 
-header nav ul li a:hover{
-    background-color: rgb(244, 252, 251);
-    transition: all 0.8s;
-}
-
-.encabezado .barra .menu ul a{
-    text-decoration: none;
-    border-radius: 8px;
-    border: 2px solid #333;
-    padding: 2px;
-}
-
-.responsiveItem{
-    text-decoration: none;
-    padding: 2px;
-    background-color: black;
-    opacity: 80%;
-}
-.responsiveItem a{
-    text-decoration: none;
-    color: white;
-}
-.responsiveLi {
-    list-style: none;
-}
 /* finaliza header */
 
 /* inicia home */
@@ -97,7 +57,7 @@ body main{
     float: right;
     height: 60%;
     width: auto;
-    margin: 50px 100px;
+    margin: 100px 180px;
     border-radius: 10px;
 }
 /* finaliza home */
@@ -113,6 +73,15 @@ footer .copy{
 /* finaliza footer */
 
 /* arranca faqs  */
+
+
+.preg{
+    height: auto;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    font-family: 'Dancing Script', cursive;
+
+}
 
 .formulario{
     display: flex;
@@ -142,14 +111,16 @@ footer .copy{
 /* finaliza faqs */
 
 /* arranca login */
-.login{
-    height: 150px;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: solid;
+.formulario{
+    padding-top: 150px;
+}
+#emailHelp{
+    color: #394652 !important;
+}
+
+.btn{
+    background-color: #a6d8be !important ;
+    color: #346b55 !important;
 }
 /* finaliza login */
 
@@ -179,8 +150,6 @@ footer .copy{
 }
 .mapa1{
     display: flex;
-    /* justify-content: flex-end; */
-    /* align-items: end; */
 }
 
 .mapa1 iframe{
@@ -190,6 +159,10 @@ footer .copy{
 /* finaliza contacto */
 
 /* arranca servicios */
+
+.servicios{
+    height: 100%;
+}
 .servs{
     display: flex;
 }
@@ -216,6 +189,10 @@ footer .copy{
 /* finaliza servicios */
 
 /* arranca nosotros */
+
+.nosotros{
+    height: 100%;
+}
 .eugenia{
     display: flex;
     margin-bottom: 100px;
@@ -237,7 +214,7 @@ footer .copy{
 }
 .chabon{
     display: flex;
-    margin-bottom: 100px;
+    padding-bottom: 20px;
     justify-content: space-around ;
     flex-direction: row-reverse;
 }
@@ -266,42 +243,16 @@ footer .copy{
 
 /* arranca header*/
 
-    .encabezado .barra .log span{
-        font-size: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 120px;
+.navbar-brand{
+    font-size: 20px !important;
+    padding-top: 20px !important;
+}
 
-        
-    }
-    .encabezado .barra .menu{
-        display: none
-    }
-    .encabezado .barra .menuResponsive{
-        display: block;
-        
-    }
-    .responsiveButton{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
-        padding: 40px 20px;
-    }
-    .responsiveLi{
-        position: relative;
-        top: -1000px;
-        
-    }
-    .menuResponsive:hover .responsiveLi{
-        top: 0;
-        transition: all 1s;
-    }
-    /* finaliza header */
+/* finaliza header */
+
     /* arranca home */
     .index{
-        height: 1000px;
+        height: auto;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -318,7 +269,7 @@ footer .copy{
 
     /* arranca servicios */
     body .servicios{
-        height: 1000px; 
+        height: auto; 
         
     } 
     .servs{
@@ -424,18 +375,33 @@ footer .copy{
     /* finaliza contacto  */
 
     /* arranca faqs */
+    
+    
     .preg{ 
-        height: 800px;
+        height: auto;
     }
     dd{
         margin-left: 20px;
         margin-right: 20px;
     }
+
     /* finaliza faqs */
     
+    /* arranca login */
+    
+    .login{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .formulario{
+        padding-top: 20px;
+    }
+    
+    /* finaliza login */
     /* arranca footer */
     footer{
         font-size: 12px;
     }
     /* finaliza footer */
-    /* finaliza mobile */}
+    /* finaliza mobile */
+}
